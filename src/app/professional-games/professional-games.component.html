@@ -1,0 +1,16 @@
+<div class="schedule-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Game Schedule</th>
+          <th>Menu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let game of games; let i = index">
+          <td>{{ game.date }} - {{ game.opponent }}</td>
+          <td *ngIf="foodSchedule[i]">{{ foodSchedule[i].food }} - {{ foodSchedule[i].cocktail }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
