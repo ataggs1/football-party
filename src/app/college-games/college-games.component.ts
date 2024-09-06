@@ -10,7 +10,7 @@ import { Component } from "@angular/core";
 })
 export class CollegeGamesComponent {
   games = [
-    { date: '08/31/2024 3:30', opponent: 'Akron' },
+    { date: '08/31/2024 3:30', opponent: 'Akron', outcome: W 52-6},
     { date: '09/07/2024 7:30', opponent: 'Western Michigan' },
     { date: '09/21/2024 TBA', opponent: 'Marshall' },
     { date: '09/28/2024 TBA', opponent: '@ Michigan State' },
