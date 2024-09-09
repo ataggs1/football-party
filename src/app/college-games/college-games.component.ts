@@ -28,7 +28,7 @@ export class CollegeGamesComponent {
     { food: 'Pizza Burrito', cocktail: 'Bourbon with mixers'},
     { food: 'Quesadilla', cocktail: 'BYOB' },
     { food: 'TBD' },
-    { food: 'TBD' },
+    { food: 'Celebrity Guest Chef Marc Craig', cocktail: 'Brisket' },
     { food: 'TBD' },
     { food: 'TBD' },
     { food: 'Closed for the season' },
