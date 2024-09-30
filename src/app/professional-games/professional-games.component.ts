@@ -33,8 +33,8 @@ export class ProfessionalGamesComponent {
   foodSchedule = [
     { food: 'Smashburgers', cocktail: 'Tequila with mixers'},
     { food: 'Meatball Subs', cocktail: 'Celebrity Guest Chef Todd Beljan'},
-    { food: 'TBD', cocktail: '' },
-    { food: 'TBD', cocktail: '' },
+    { food: '', cocktail: '' },
+    { food: 'Celebrity Guest Chef Marc Craig', cocktail: 'Chicken Wings and Pizza' },
     { food: 'Celebrity Guest Chef Marc Craig', cocktail: 'Pulled Pork'},
     { food: 'TBD', cocktail: '' },
     { food: 'TBD', cocktail: '' },
