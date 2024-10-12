@@ -36,7 +36,7 @@ export class ProfessionalGamesComponent {
     { food: '', cocktail: '' },
     { food: 'Celebrity Guest Chef Marc Craig', cocktail: 'Chicken Wings and Pizza' },
     { food: 'Celebrity Guest Chef Marc Craig', cocktail: 'Pulled Pork'},
-    { food: 'TBD', cocktail: '' },
+    { food: 'French Toast', cocktail: 'Mimosas' },
     { food: 'TBD', cocktail: '' },
     { food: 'TBD' , cocktail: ''},
     { food: 'Closed for the season', cocktail: '' },
