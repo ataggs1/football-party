@@ -6,6 +6,12 @@
       <li><a routerLink="/home" routerLinkActive="active"ariaCurrentWhenActive="page">Home</a></li>
       <li><a routerLink="/college-games" routerLinkActive="active"ariaCurrentWhenActive="page">Buckeye Games</a></li>
       <li><a routerLink="/professional-games" routerLinkActive="active"ariaCurrentWhenActive="page">Browns Games</a></li>
+      <li>
+        <button class="theme-toggle" (click)="toggleTheme()" 
+                [attr.aria-label]="(themeService.isDarkMode$ | async) ? 'Switch to light mode' : 'Switch to dark mode'">
+          {{ (themeService.isDarkMode$ | async) ? '☀️ Light' : '🌙 Dark' }}
+        </button>
+      </li>
      </ul>
 </nav>
   

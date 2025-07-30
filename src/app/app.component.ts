@@ -3,6 +3,7 @@ import { RouterLinkActive, RouterOutlet, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CollegeGamesComponent } from "./college-games/college-games.component";
 import{ProfessionalGamesComponent} from "./professional-games/professional-games.component";
+import { ThemeService } from './services/theme.service';
 
 
 @Component({
@@ -14,6 +15,12 @@ import{ProfessionalGamesComponent} from "./professional-games/professional-games
 })
 export class AppComponent {
   title = 'football-party-app';
+
+  constructor(public themeService: ThemeService) {}
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
+  }
 }
 
 

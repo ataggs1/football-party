@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Light theme variables */
+:root[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg-color: #00000081;
+  --nav-text-color: #ffffff;
+  --nav-active-color: #9acd32;
+  --table-bg-color: #ffffff;
+  --table-stripe-color: #f8f9fa;
+  --table-border-color: #dee2e6;
+}
+
+/* Dark theme variables */
+:root[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --nav-bg-color: #2d2d2d;
+  --nav-text-color: #ffffff;
+  --nav-active-color: #9acd32;
+  --table-bg-color: #2d2d2d;
+  --table-stripe-color: #3a3a3a;
+  --table-border-color: #4a4a4a;
+}
+
+/* Default to light theme if no attribute is set */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --nav-bg-color: #00000081;
+  --nav-text-color: #ffffff;
+  --nav-active-color: #9acd32;
+  --table-bg-color: #ffffff;
+  --table-stripe-color: #f8f9fa;
+  --table-border-color: #dee2e6;
+}
+
+/* Apply theme colors to body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Update Bootstrap table styles to use theme variables */
+.table {
+  background-color: var(--table-bg-color);
+  color: var(--text-color);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-striped > tbody > tr:nth-of-type(odd) > th {
+  background-color: var(--table-stripe-color);
+}
+
+.table th,
+.table td {
+  border-color: var(--table-border-color);
+}
